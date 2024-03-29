@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/public/styles.css">
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,13 +17,13 @@
   <!-- navbar section start -->
   <nav id="navbar" class="custom-container d-flex flex-row justify-content-between">
     <div class="d-flex flex-row gap-100px">
-      <a href="/index.html" class="navbar poppins-medium fs-4">Home</a>
-      <a href="/Menu/addMenu.html" class="navbar poppins-medium fs-4">Add Recipe</a>
-      <a href="/Menu/detailMenu.html" class="navbar poppins-medium fs-4">Search Menu</a>
+      <a href="/public/index.html" class="navbar poppins-medium fs-4">Home</a>
+      <a href="/public/Menu/addMenu.html" class="navbar poppins-medium fs-4">Add Recipe</a>
+      <a href="/public/Menu/detailMenu.html" class="navbar poppins-medium fs-4">Search Menu</a>
     </div>
-    <a href="/index.html" class="d-flex flex-row align-items-center" style="text-decoration: none;">
+    <a href="/public/index.html" class="d-flex flex-row align-items-center" style="text-decoration: none;">
       <div class="border-left"></div>
-      <img src="/images/img-profile.png" class="img-profile" alt="..." />
+      <img src="/public/images/img-profile.png" class="img-profile" alt="..." />
       <div class="d-flex flex-column align-items-center mt-2">
         <p class="name-profile poppins-medium">Ayudia</p>
         <p class="logout">Logout</p>
@@ -33,14 +33,14 @@
   <!-- navbar section end -->
 
   <main class="custom-container mt-5 mb-5" >
-    <div class="d-flex flex-column" style="width: 75%;">
-      <h1 class="mb-5 " style="color: #2E266F; font-size: 72px;">Discover Recipe <br>
+    <div class="d-flex flex-column">
+      <h1 class="search-text mb-5 ">Discover Recipe <br>
         & Delicious Food</h1>
-      <div class="d-flex flex-row mb-4">
+      <div class="d-flex flex-column flex-md-row gap-3 mb-4">
         <input type="text" placeholder="Telur Gulung" class="px-5 py-3 rounded"/>
         <input value="Search" type="submit" class="mx-4 px-5 py-2 rounded fs-3">
       </div>
-      <div class="d-flex flex-row gap-4 mb-5">
+      <div class="d-flex flex-column flex-md-row gap-4 mb-5">
         <input value="New" type="submit"/>
         <input value="Popular" type="submit"/>
         <input value="Vegetarian" type="submit" style="background-color: #00E092;"/>
@@ -49,14 +49,62 @@
     </div>
     <!-- Hasil pencarian  -->
     <div class="d-flex flex-column gap-5 ">
-      <div class="d-flex flex-row gap-5" style="width: 800px;">
-        <img src="/images/image-search.png" alt="..." style="width: 500px;"/>
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <img src="/public/images/image-search.png" alt="..." class="recipe-container"/>
         <div class="d-flex flex-column gap-1 mt-4">
           <h1>Bomb Chicken</h1>
           <p class="fs-4" style="">Ingredients: <br> Chicken, Dumpling Wrap, Garlic, Spring Onion, Soy Sauce, Black Sesame Seed</p>
           <label class="p-2 rounded text-center" style="font-size: 12px; background-color: #EFC81A; color: #ffff;">10 Likes - 12 Comment - 3 Bookmark</label>
           <div class="d-flex flex-row gap-3">
-            <img src="/images/img-profile.png" class="img-profile" />
+            <img src="/public/images/img-profile.png" class="img-profile" />
+            <p class="name-profile poppins-medium pt-3 text-center">Karen</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <img src="/public/images/image-search.png" alt="..." class="recipe-container"/>
+        <div class="d-flex flex-column gap-1 mt-4">
+          <h1>Bomb Chicken</h1>
+          <p class="fs-4" style="">Ingredients: <br> Chicken, Dumpling Wrap, Garlic, Spring Onion, Soy Sauce, Black Sesame Seed</p>
+          <label class="p-2 rounded text-center" style="font-size: 12px; background-color: #EFC81A; color: #ffff;">10 Likes - 12 Comment - 3 Bookmark</label>
+          <div class="d-flex flex-row gap-3">
+            <img src="/public/images/img-profile.png" class="img-profile" />
+            <p class="name-profile poppins-medium pt-3 text-center">Karen</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <img src="/public/images/image-search.png" alt="..." class="recipe-container"/>
+        <div class="d-flex flex-column gap-1 mt-4">
+          <h1>Bomb Chicken</h1>
+          <p class="fs-4" style="">Ingredients: <br> Chicken, Dumpling Wrap, Garlic, Spring Onion, Soy Sauce, Black Sesame Seed</p>
+          <label class="p-2 rounded text-center" style="font-size: 12px; background-color: #EFC81A; color: #ffff;">10 Likes - 12 Comment - 3 Bookmark</label>
+          <div class="d-flex flex-row gap-3">
+            <img src="/public/images/img-profile.png" class="img-profile" />
+            <p class="name-profile poppins-medium pt-3 text-center">Karen</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <img src="/public/images/image-search.png" alt="..." class="recipe-container"/>
+        <div class="d-flex flex-column gap-1 mt-4">
+          <h1>Bomb Chicken</h1>
+          <p class="fs-4" style="">Ingredients: <br> Chicken, Dumpling Wrap, Garlic, Spring Onion, Soy Sauce, Black Sesame Seed</p>
+          <label class="p-2 rounded text-center" style="font-size: 12px; background-color: #EFC81A; color: #ffff;">10 Likes - 12 Comment - 3 Bookmark</label>
+          <div class="d-flex flex-row gap-3">
+            <img src="/public/images/img-profile.png" class="img-profile" />
+            <p class="name-profile poppins-medium pt-3 text-center">Karen</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row gap-5">
+        <img src="/public/images/image-search.png" alt="..." class="recipe-container"/>
+        <div class="d-flex flex-column gap-1 mt-4">
+          <h1>Bomb Chicken</h1>
+          <p class="fs-4" style="">Ingredients: <br> Chicken, Dumpling Wrap, Garlic, Spring Onion, Soy Sauce, Black Sesame Seed</p>
+          <label class="p-2 rounded text-center" style="font-size: 12px; background-color: #EFC81A; color: #ffff;">10 Likes - 12 Comment - 3 Bookmark</label>
+          <div class="d-flex flex-row gap-3">
+            <img src="/public/images/img-profile.png" class="img-profile" />
             <p class="name-profile poppins-medium pt-3 text-center">Karen</p>
           </div>
         </div>
@@ -74,7 +122,7 @@
       <h1 class="poppins-medium footer-title">Eat, Cook, Repeat</h1>
       <p class="poppins-regular footer-desc">Share your best recipe by uploading here !</p>
     </section>
-    <div class="d-flex justify-content-center" style="padding-bottom: 50px;">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center" style="padding-bottom: 50px;">
       <ul class="poppins-regular footer-list">Product</ul>
       <ul class="poppins-regular footer-list">Company</ul>
       <ul class="poppins-regular footer-list">Learn More</ul>
