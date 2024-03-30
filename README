@@ -25,3 +25,6 @@ recipe-html is a static website project aimed to provide a collection of cooking
 - My Bookmark
 - Profile update
 - Password update
+
+## Deploy
+https://recipes-statis.vercel.app/
